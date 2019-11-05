@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_status_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pb_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:minHeight="50dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_restaurant_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_restaurant_details_logo"
+            android:layout_width="200dp"
+            android:layout_height="105dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_restaurant_details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_restaurant_details_logo"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Blah Restaurant"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_restaurant_details_open_hours"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_restaurant_details_name"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/restaurant_details_open_hours"-->
+<!--            android:textColor="@color/darkgray"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <RatingBar
+            android:id="@+id/rb_restaurant_details_ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_restaurant_details_name"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="2.5"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:layout_marginBottom="5dp"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/tv_restaurant_details_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rb_restaurant_details_ratings"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/restaurant_details_ratings"
+            android:textColor="@color/darkgray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_restaurant_details_extra_data_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_restaurant_details_ratings"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_restaurant_details_delivery_charges"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Free"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_restaurant_details_delivery_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="14-24"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_restaurant_details_extra_data_dynamic"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/restaurant_details_delivery_charges"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/restaurant_details_delivery_minutes"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

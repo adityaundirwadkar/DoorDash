@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DoorDash</string>
+    <string name="toolbar_header">Discover</string>
+
+    <string name="toast_refresh_in_progress">Refreshing the list</string>
+    <string name="toast_refresh_failed">We are already refreshing the list in background. Please wait!</string>
+
+    <string name="status_loading_restaurants">Grabbing the menu. Please wait!</string>
+    <string name="status_error">Oops! Something went wrong!</string>
+
+    <string name="restaurant_details_ratings">%1$s (%2$s Ratings)</string>
+
+    <string name="restaurant_details_delivery_charges">Delivery</string>
+    <string name="restaurant_details_delivery_minutes">minutes</string>
+
+</resources>

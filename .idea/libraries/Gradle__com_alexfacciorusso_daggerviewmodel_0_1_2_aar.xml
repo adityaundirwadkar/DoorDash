@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alexfacciorusso:daggerviewmodel:0.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e55b1a6f4e64d8cb0bf3b91aabe4d494/jetified-daggerviewmodel-0.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e55b1a6f4e64d8cb0bf3b91aabe4d494/jetified-daggerviewmodel-0.1.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alexfacciorusso/daggerviewmodel/0.1.2/70b5ca76ff711c70ca9aa036ae5a0194514ad265/daggerviewmodel-0.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alexfacciorusso/daggerviewmodel/0.1.2/fdb62eda84bb50de08d28d1b8fcb1727e0dd87a7/daggerviewmodel-0.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
